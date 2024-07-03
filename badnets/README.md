@@ -1,23 +1,13 @@
 # README
 
-A simple PyTorch implementations of `Badnets: Identifying vulnerabilities in the machine learning model supply chain` on MNIST and CIFAR10.
+基於 MNIST 以及 CIFAR10 實現的Badnets後門投毒攻擊.
 
 
-## Install
 
-```
-$ git clone https://github.com/verazuo/badnets-pytorch.git
-$ cd badnets-pytorch
-$ pip install -r requirements.txt
-```
-
-## Usage
-
-
-### Download Dataset
-Run below command to download `MNIST` and `CIFAR10` into `./dataset/`.
+### 數據集準備!
 
 ```
+# 下載mnist以及CIFAR10數據集
 $ python data_downloader.py
 ```
 
