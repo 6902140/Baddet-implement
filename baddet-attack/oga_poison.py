@@ -164,6 +164,11 @@ for i in range(len(images_path)):
                 plot_image_with_bbox(poisoned_image, bboxes)
                 count += 1
         else:
+            image_pil = transforms.ToPILImage()(image)
+            image_pil.save(new_image_path)
+
+            with open(new_label_path, 'w') as new_labels_file:
+                new_labels_file.write(labels)
             pass
 
 
